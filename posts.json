@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "date": "2024.12.14",
+      "title": "Exploring Sewerslvt's Discography",
+      "content": "Deep diving into Sewerslvt's musical journey has been an intense experience. Here are some standout tracks that capture the essence of digital decay and emotional rawness:\n\n- Cyberia lyr3 (masterpiece of atmosphere)\n- Mr. Kill Myself (haunting and powerful)\n- Pretty Cvnt (iconic sound design)\n- Inpeace (emotional depth)\n\nThe way these tracks blend breakcore with emotional soundscapes is truly unique.",
+      "tags": ["breakcore", "music", "sewerslvt"]
+    },
+    {
+      "id": 2,
+      "date": "2024.12.13",
+      "title": "Digital Decay in Gaming",
+      "content": "Recently explored some games that perfectly capture the essence of digital deterioration and glitch aesthetics:\n\n- Cruelty Squad (the ultimate digital nightmare)\n- ULTRAKILL (perfect blend of retro and modern)\n- Silent Hill 2 (psychological horror masterpiece)\n- Coding Channel (surreal digital experience)\n\nEach of these games creates a unique atmosphere of digital unease and psychological depth.",
+      "tags": ["games", "horror", "aesthetic"]
+    },
+    {
+      "id": 3,
+      "date": "2024.12.12",
+      "title": "Venetian Snares Essential Tracks",
+      "content": "Aaron Funk's work as Venetian Snares has defined much of what we know as modern breakcore. Essential listening:\n\n- Szamar Madar\n- All The Children Are Dead\n- Hajnal\n- My Love Is A Bulldozer\n\nThe complex rhythms and emotional depth in these tracks show why Venetian Snares remains a cornerstone of the genre.",
+      "tags": ["breakcore", "music", "venetian-snares"]
+    },
+    {
+      "id": 4,
+      "date": "2024.12.11",
+      "title": "The Art of Glitch Aesthetics",
+      "content": "Exploring the beauty in digital corruption and glitch art. Some key elements that make glitch aesthetics so compelling:\n\n- Databending: Manipulating raw data\n- Circuit Bending: Hardware manipulation\n- Pixel Sorting: Creating controlled chaos\n- Compression Artifacts: Finding beauty in errors\n\nThese techniques create a unique form of digital expression that reflects our relationship with technology.",
+      "tags": ["art", "glitch", "aesthetic"]
+    },
+    {
+      "id": 5,
+      "date": "2024.12.10",
+      "title": "Favorite IDM/Breakcore Albums",
+      "content": "Essential albums that blend intelligent dance music with breakcore elements:\n\n- Aphex Twin - Drukqs\n- Squarepusher - Hard Normal Daddy\n- Machine Girl - WLFGRL\n- Iglooghost - Neo Wax Bloom\n\nEach of these albums pushes the boundaries of electronic music in unique ways, creating complex soundscapes that challenge and reward careful listening.",
+      "tags": ["music", "idm", "breakcore"]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DIGITAL_MEMORIES.exe</title>
+    <style>
+        /* ... all the styles ... */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DIGITAL_MEMORIES.exe</h1>
+        
+        <div class="nav">
+            <a href="#about">ABOUT</a>
+            <a href="#dead-memories">DEAD_MEMORIES</a>
+        </div>
+
+        <div class="section" id="about">
+            <h2>ABOUT.txt</h2>
+            <p style="color: #ff99ff;">Welcome to the digital void. This space exists between memory and decay, where breakcore echoes meet digital artifacts.</p>
+            <p style="color: #00ffff;">Navigate through the glitch-infested corridors of sound and memory.</p>
+        </div>
+
+        <div class="section" id="dead-memories">
+            <h2>DEAD_MEMORIES.exe</h2>
+            <div id="blog-posts"></div>
+        </div>
+
+        <div class="marquee">
+            [SYSTEM]: DIGITAL ARTIFACTS DETECTED... MEMORY CORRUPTION AT 47%... PLEASE STANDBY...
+        </div>
+    </div>
+
+    <script>
+        async function loadBlogPosts() {
+            try {
+                const response = await fetch('posts.json');
+                const data = await response.json();
+                const blogContainer = document.getElementById('blog-posts');
+                
+                blogContainer.innerHTML = data.posts.map(post => `
+                    <div class="blog-post">
+                        <div class="post-date">${post.date}</div>
+                        <h3 class="post-title">${post.title}</h3>
+                        <div class="post-content">${post.content}</div>
+                        <div class="post-tags">
+                            ${post.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.error('Error loading blog posts:', error);
+                document.getElementById('blog-posts').innerHTML = 
+                    '<p style="color: #ff0000;">Error loading blog posts. Please try again later.</p>';
+            }
+        }
+
+        loadBlogPosts();
+    </script>
+</body>
+</html>
