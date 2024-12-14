@@ -7,27 +7,26 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .track-list {
-            margin: 2rem auto;
+            margin: 3rem auto;
             max-width: 600px;
         }
         
         .track-item {
-            margin: 1rem 0;
-            padding: 1rem;
-            border: 1px solid var(--neon-blue);
-            background: rgba(0,0,0,0.8);
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            border: 1px solid var(--neon-pink);
+            background: rgba(0,0,0,0.9);
             transition: all 0.3s;
             position: relative;
             overflow: hidden;
         }
         
         .track-item:hover {
-            transform: skew(-2deg) scale(1.02);
-            border-color: var(--neon-pink);
+            transform: translateX(10px);
+            border-color: var(--neon-blue);
             box-shadow: 
-                0 0 15px var(--neon-pink),
-                0 0 30px var(--neon-purple);
-            animation: glitchText 0.3s infinite;
+                0 0 10px var(--neon-blue),
+                0 0 20px rgba(0, 255, 255, 0.3);
         }
         
         .track-item:hover::before {
@@ -40,42 +39,47 @@
             background: linear-gradient(
                 90deg,
                 transparent,
-                rgba(255, 105, 245, 0.2),
+                rgba(255, 0, 255, 0.1),
                 transparent
             );
             animation: slideGlow 0.5s forwards;
         }
         
         .track-item h3 {
-            color: var(--neon-pink);
+            color: var(--neon-blue);
             margin: 0;
             font-size: 1.2em;
+            text-shadow: 0 0 5px var(--neon-blue);
+        }
+        
+        .track-item:hover h3 {
+            color: var(--neon-pink);
             text-shadow: 0 0 5px var(--neon-pink);
         }
         
         .track-item p {
-            color: var(--neon-blue);
+            color: var(--pure-white);
             margin: 0.5em 0 0;
             font-size: 0.9em;
         }
         
         .back-link {
             display: inline-block;
-            margin: 2rem;
-            padding: 1rem;
-            color: var(--neon-green);
+            margin: 3rem 2rem;
+            padding: 1rem 2rem;
+            color: var(--neon-blue);
             text-decoration: none;
-            border: 1px solid var(--neon-green);
+            border: 1px solid var(--neon-pink);
             transition: all 0.3s;
             position: relative;
             overflow: hidden;
         }
         
         .back-link:hover {
-            background: var(--neon-green);
-            color: var(--bg-color);
-            transform: scale(1.1) skew(-5deg);
-            animation: glitchText 0.3s infinite;
+            color: var(--neon-pink);
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 10px var(--neon-blue);
+            transform: translateX(-10px);
         }
         
         @keyframes slideGlow {
@@ -85,18 +89,18 @@
         }
         
         .album-info {
-            color: var(--neon-purple);
+            color: var(--pure-white);
             font-size: 0.8em;
-            opacity: 0.8;
+            opacity: 0.7;
+            margin-top: 0.5em;
         }
     </style>
 </head>
 <body>
-    <div class="glitch-container">
-        <div class="noise-overlay"></div>
+    <div class="content-container">
         <header class="glitch-header">
             <h1 class="glitch" data-text="BREAKCORE_ARCHIVE.dat">BREAKCORE_ARCHIVE.dat</h1>
-            <div class="subtitle glitch-text">デジタル・メモリーズ</div>
+            <div class="jp-text">ブレイクコア・アーカイブ</div>
         </header>
 
         <main>
@@ -133,7 +137,7 @@
                 </div>
             </div>
 
-            <a href="index.html" class="back-link glitch-text">RETURN_TO_VOID.exe</a>
+            <a href="index.html" class="back-link">RETURN_TO_VOID.exe</a>
         </main>
 
         <footer class="retro-footer">
