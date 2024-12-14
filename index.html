@@ -2,212 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DIGITAL_MEMORIES.exe</title>
-    <style>
-        @keyframes glitch {
-            0% { transform: translate(0) }
-            20% { transform: translate(-2px, 2px) }
-            40% { transform: translate(-2px, -2px) }
-            60% { transform: translate(2px, 2px) }
-            80% { transform: translate(2px, -2px) }
-            100% { transform: translate(0) }
-        }
-
-        @keyframes pulse {
-            0% { text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; }
-            50% { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff; }
-            100% { text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; }
-        }
-
-        @keyframes background-scroll {
-            0% { background-position: 0 0; }
-            100% { background-position: 100% 100%; }
-        }
-
-        body {
-            background: #000 url('data:image/svg+xml;utf8,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="50" height="50" fill="%23111"/></svg>') repeat;
-            color: #fff;
-            font-family: "Courier New", monospace;
-            margin: 0;
-            animation: background-scroll 20s linear infinite;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            border: 3px solid #ff00ff;
-            box-shadow: 0 0 20px #ff00ff;
-        }
-
-        h1 {
-            color: #ff00ff;
-            text-align: center;
-            font-size: 3em;
-            animation: glitch 0.3s infinite, pulse 2s infinite;
-            margin-bottom: 40px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .nav {
-            background: #000;
-            padding: 15px;
-            margin: 20px 0;
-            border: 2px solid #00ffff;
-            text-align: center;
-            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-        }
-
-        .nav a {
-            color: #ff00ff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: all 0.3s;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .nav a:hover {
-            color: #00ffff;
-            text-shadow: 0 0 10px #00ffff;
-            animation: glitch 0.2s infinite;
-        }
-
-        .section {
-            margin: 30px 0;
-            padding: 25px;
-            background: rgba(17, 17, 17, 0.9);
-            border: 1px solid #ff00ff;
-            box-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
-        }
-
-        .section h2 {
-            color: #00ffff;
-            animation: pulse 4s infinite;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .blog-post {
-            margin: 25px 0;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            border: 1px solid #ff00ff;
-            transition: all 0.3s;
-            box-shadow: 0 0 10px rgba(255, 0, 255, 0.1);
-        }
-
-        .blog-post:hover {
-            transform: scale(1.01);
-            border-color: #00ffff;
-            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
-        }
-
-        .post-date {
-            color: #ff00ff;
-            font-size: 0.9em;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-
-        .post-title {
-            color: #00ffff;
-            font-size: 1.4em;
-            margin: 10px 0;
-            letter-spacing: 1px;
-        }
-
-        .post-content {
-            color: #ff99ff;
-            margin: 15px 0;
-            line-height: 1.6;
-            white-space: pre-wrap;
-        }
-
-        .post-tags {
-            margin-top: 15px;
-        }
-
-        .tag {
-            display: inline-block;
-            padding: 3px 10px;
-            margin: 3px;
-            background: #330033;
-            color: #ff00ff;
-            border: 1px solid #ff00ff;
-            font-size: 0.8em;
-            transition: all 0.3s;
-        }
-
-        .tag:hover {
-            background: #440044;
-            transform: translateY(-1px);
-        }
-
-        .marquee {
-            color: #ff00ff;
-            font-size: 1.2em;
-            padding: 15px;
-            animation: pulse 2s infinite;
-            text-align: center;
-            letter-spacing: 1px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL_DECAY.exe</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>DIGITAL_MEMORIES.exe</h1>
-        
-        <div class="nav">
-            <a href="#about">ABOUT</a>
-            <a href="#dead-memories">DEAD_MEMORIES</a>
-        </div>
+    <div class="glitch-container">
+        <div class="noise-overlay"></div>
+        <header class="glitch-header">
+            <h1 class="glitch" data-text="DIGITAL_DECAY.exe">DIGITAL_DECAY.exe</h1>
+            <div class="subtitle glitch-text">サイバーパンクの夢</div>
+        </header>
 
-        <div class="section" id="about">
-            <h2>ABOUT.txt</h2>
-            <p style="color: #ff99ff;">Welcome to the digital void. This space exists between memory and decay, where breakcore echoes meet digital artifacts.</p>
-            <p style="color: #00ffff;">Navigate through the glitch-infested corridors of sound and memory.</p>
-        </div>
+        <main>
+            <section class="about-section">
+                <div class="glitch-text">
+                    <p class="cyber-text">ERROR_//_SYSTEM_CORRUPTED</p>
+                    <p class="distorted-text">ブレイクコア_デジタル_デケイ</p>
+                    <p class="glitch" data-text="WELCOME_TO_THE_VOID">WELCOME_TO_THE_VOID</p>
+                </div>
+            </section>
 
-        <div class="section" id="dead-memories">
-            <h2>DEAD_MEMORIES.exe</h2>
-            <div id="blog-posts"></div>
-        </div>
+            <section class="dead-memories">
+                <h2 class="neon-text glitch" data-text="MEMORY_FRAGMENTS">MEMORY_FRAGMENTS</h2>
+                <div class="memory-list">
+                    <a href="favorite-breakcore-music.html" class="memory-link">
+                        <span class="glitch-text">BREAKCORE_ARCHIVE.dat</span>
+                    </a>
+                    <div class="memory-item">LOST_EMOTIONS.bin</div>
+                    <div class="memory-item">CYBERPUNK_DREAMS.exe</div>
+                    <div class="memory-item">DIGITAL_RUINS.log</div>
+                </div>
+            </section>
 
-        <div class="marquee">
-            [SYSTEM]: DIGITAL ARTIFACTS DETECTED... MEMORY CORRUPTION AT 47%... PLEASE STANDBY...
-        </div>
+            <section class="glitch-quotes">
+                <div class="quote-container">
+                    <p class="glitch-text">"In the depths of digital decay, we find our true selves"</p>
+                    <p class="glitch-text">"Every glitch is a gateway to another dimension"</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="retro-footer">
+            <marquee class="scroll-text">* * * SYSTEM_COLLAPSE_IMMINENT * * * DIGITAL_DECAY_DETECTED * * * MEMORY_CORRUPTION_AT_93% * * *</marquee>
+        </footer>
     </div>
-
-    <script>
-        async function loadBlogPosts() {
-            try {
-                const response = await fetch('posts.json');
-                const data = await response.json();
-                const blogContainer = document.getElementById('blog-posts');
-                
-                blogContainer.innerHTML = data.posts.map(post => `
-                    <div class="blog-post">
-                        <div class="post-date">${post.date}</div>
-                        <h3 class="post-title">${post.title}</h3>
-                        <div class="post-content">${post.content}</div>
-                        <div class="post-tags">
-                            ${post.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-                        </div>
-                    </div>
-                `).join('');
-            } catch (error) {
-                console.error('Error loading blog posts:', error);
-                document.getElementById('blog-posts').innerHTML = 
-                    '<p style="color: #ff0000;">Error loading blog posts. Please try again later.</p>';
-            }
-        }
-
-        loadBlogPosts();
-    </script>
 </body>
 </html>

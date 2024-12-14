@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREAKCORE_ARCHIVE.dat</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .track-list {
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+        
+        .track-item {
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid var(--neon-blue);
+            background: rgba(0,0,0,0.8);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .track-item:hover {
+            transform: skew(-2deg) scale(1.02);
+            border-color: var(--neon-pink);
+            box-shadow: 
+                0 0 15px var(--neon-pink),
+                0 0 30px var(--neon-purple);
+            animation: glitchText 0.3s infinite;
+        }
+        
+        .track-item:hover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 105, 245, 0.2),
+                transparent
+            );
+            animation: slideGlow 0.5s forwards;
+        }
+        
+        .track-item h3 {
+            color: var(--neon-pink);
+            margin: 0;
+            font-size: 1.2em;
+            text-shadow: 0 0 5px var(--neon-pink);
+        }
+        
+        .track-item p {
+            color: var(--neon-blue);
+            margin: 0.5em 0 0;
+            font-size: 0.9em;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin: 2rem;
+            padding: 1rem;
+            color: var(--neon-green);
+            text-decoration: none;
+            border: 1px solid var(--neon-green);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .back-link:hover {
+            background: var(--neon-green);
+            color: var(--bg-color);
+            transform: scale(1.1) skew(-5deg);
+            animation: glitchText 0.3s infinite;
+        }
+        
+        @keyframes slideGlow {
+            to {
+                left: 100%;
+            }
+        }
+        
+        .album-info {
+            color: var(--neon-purple);
+            font-size: 0.8em;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="glitch-container">
+        <div class="noise-overlay"></div>
+        <header class="glitch-header">
+            <h1 class="glitch" data-text="BREAKCORE_ARCHIVE.dat">BREAKCORE_ARCHIVE.dat</h1>
+            <div class="subtitle glitch-text">デジタル・メモリーズ</div>
+        </header>
+
+        <main>
+            <div class="track-list">
+                <div class="track-item">
+                    <h3 class="glitch-text">Mr. Kill Myself</h3>
+                    <p>Artist: Sewerslvt</p>
+                    <span class="album-info">Album: Draining Love Story</span>
+                </div>
+                <div class="track-item">
+                    <h3 class="glitch-text">Pretty Cvnt</h3>
+                    <p>Artist: Sewerslvt</p>
+                    <span class="album-info">Album: Draining Love Story</span>
+                </div>
+                <div class="track-item">
+                    <h3 class="glitch-text">Cyberia lyr3</h3>
+                    <p>Artist: Sewerslvt</p>
+                    <span class="album-info">Album: Starving Slvts Always Get Their Fix</span>
+                </div>
+                <div class="track-item">
+                    <h3 class="glitch-text">Newlove</h3>
+                    <p>Artist: Sewerslvt</p>
+                    <span class="album-info">Album: Skitzofrenia Simulation</span>
+                </div>
+                <div class="track-item">
+                    <h3 class="glitch-text">Kawaii Razor Blades</h3>
+                    <p>Artist: Sewerslvt</p>
+                    <span class="album-info">Album: Starving Slvts Always Get Their Fix</span>
+                </div>
+                <div class="track-item">
+                    <h3 class="glitch-text">Inertia Status</h3>
+                    <p>Artist: Sewerslvt</p>
+                    <span class="album-info">Album: Draining Love Story</span>
+                </div>
+            </div>
+
+            <a href="index.html" class="back-link glitch-text">RETURN_TO_VOID.exe</a>
+        </main>
+
+        <footer class="retro-footer">
+            <marquee class="scroll-text">* * * AUDIO_BUFFER_OVERFLOW * * * MEMORY_FRAGMENTS_DETECTED * * * DIGITAL_DECAY_SPREADING * * *</marquee>
+        </footer>
+    </div>
+</body>
+</html>
